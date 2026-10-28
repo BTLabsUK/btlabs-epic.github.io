@@ -22,7 +22,7 @@ BT Labs' download server.
 | `btlabs-keyring.json` | The public keys that may sign the files (rank 1 signs, rank 2 is the spare). |
 
 Never edit the signed files by hand: they are produced and signed by BT Labs' release tooling
-(`tools/publish-update-json.sh` in [wallet-for-epic](https://gitlab.com/bt-labs-group/wallet-for-epic)),
+(`tools/publish-update-json.sh` in [wallet-for-epic](https://gitlab.com/epic-cash-bt/wallet-for-epic)),
 and any change to their bytes breaks the signature.
 
 ## Verify a file yourself

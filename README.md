@@ -10,8 +10,22 @@
 
 The wallets read these files to learn about updates and BT Labs' services. Every file is a DSSE
 v1 envelope signed with Ed25519; the apps verify it with the keys they ship and ignore anything
-that does not verify. They are served by GitHub Pages at `https://btlabs-epic.github.io/` and by
-BT Labs' download server.
+that does not verify. The apps read `update-v2.json` from three places and use the valid copy with
+the higher serial:
+
+1. BT Labs' server: `https://epiccash.btlabs.uk/api/v1/update.json`
+2. this repository on GitLab:
+   `https://gitlab.com/epic-cash-bt/btlabs-epic.github.io/-/raw/main/update-v2.json`
+3. the latest GitHub release of wallet-for-epic:
+   `https://github.com/BTLabsUK/wallet-for-epic/releases/latest/download/update-v2.json`
+
+`btlabs.json` is read from
+`https://gitlab.com/epic-cash-bt/btlabs-epic.github.io/-/raw/main/btlabs.json`. The address
+`btlabs-epic.github.io` is no longer used (GitHub Pages is gone; the name is kept for this
+repository).
+
+Source: [GitLab](https://gitlab.com/epic-cash-bt/btlabs-epic.github.io) · Mirror:
+[GitHub](https://github.com/BTLabsUK/btlabs-epic.github.io)
 
 ## Files
 

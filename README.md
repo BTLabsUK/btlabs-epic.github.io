@@ -14,18 +14,17 @@ that does not verify. The apps read `update-v2.json` from three places and use t
 the higher serial:
 
 1. BT Labs' server: `https://epiccash.btlabs.uk/api/v1/update.json`
-2. this repository on GitLab:
-   `https://gitlab.com/epic-cash-bt/btlabs-epic.github.io/-/raw/main/update-v2.json`
+2. this repository on GitHub:
+   `https://raw.githubusercontent.com/BTLabsUK/btlabs-epic.github.io/main/update-v2.json`
 3. the latest GitHub release of wallet-for-epic:
    `https://github.com/BTLabsUK/wallet-for-epic/releases/latest/download/update-v2.json`
 
 `btlabs.json` is read from
-`https://gitlab.com/epic-cash-bt/btlabs-epic.github.io/-/raw/main/btlabs.json`. The address
+`https://raw.githubusercontent.com/BTLabsUK/btlabs-epic.github.io/main/btlabs.json`. The address
 `btlabs-epic.github.io` is no longer used (GitHub Pages is gone; the name is kept for this
 repository).
 
-Source: [GitLab](https://gitlab.com/epic-cash-bt/btlabs-epic.github.io) · Mirror:
-[GitHub](https://github.com/BTLabsUK/btlabs-epic.github.io)
+Source: [GitHub](https://github.com/BTLabsUK/btlabs-epic.github.io)
 
 ## Files
 
@@ -36,7 +35,7 @@ Source: [GitLab](https://gitlab.com/epic-cash-bt/btlabs-epic.github.io) · Mirro
 | `btlabs-keyring.json` | The public keys that may sign the files (rank 1 signs, rank 2 is the spare). |
 
 Never edit the signed files by hand: they are produced and signed by BT Labs' release tooling
-(`tools/publish-update-json.sh` in [wallet-for-epic](https://gitlab.com/epic-cash-bt/wallet-for-epic)),
+(`tools/publish-update-json.sh` in [wallet-for-epic](https://github.com/BTLabsUK/wallet-for-epic)),
 and any change to their bytes breaks the signature.
 
 ## Verify a file yourself

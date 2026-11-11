@@ -1,0 +1,16 @@
+{
+  "keys": [
+    {
+      "keyid": "8d85230d01812375",
+      "rank": 1,
+      "public_key": "ZPoz4rvBgr7/TJOeHEND7z9AvSMGZ5xnmj9YOEG4t3w=",
+      "label": "btlabs-ann-2026-a"
+    },
+    {
+      "keyid": "5536e619d3a69009",
+      "rank": 2,
+      "public_key": "+f8YUYMYDNFiTgXWi2LTry9eZLg7x+IjXb73OzhW8uQ=",
+      "label": "btlabs-ann-2026-b"
+    }
+  ]
+}

@@ -33,6 +33,8 @@ Source: [GitHub](https://github.com/BTLabsUK/btlabs-epic.github.io)
 | `update.json` | The latest release of each app: version, download URLs, SHA-256 and size per platform, release notes, a serial and an expiry. The apps check it and use the valid copy with the higher serial. |
 | `btlabs.json` | BT Labs' public file: official links, donation addresses, nodes and relays. |
 | `btlabs-keyring.json` | The public keys that may sign the files (rank 1 signs, rank 2 is the spare). |
+| `announcements.json` | Short signed messages from BT Labs that the wallet shows when its Announcements setting is on. |
+| `announcements-keyring.json` | The public keys that may sign `announcements.json`, separate from the release keys (rank 1 signs, rank 2 only revokes rank 1). |
 
 Never edit the signed files by hand: they are produced and signed by BT Labs' release tooling
 (`tools/publish-update-json.sh` in [wallet-for-epic](https://github.com/BTLabsUK/wallet-for-epic)),

@@ -19,8 +19,10 @@ the higher serial:
 3. the latest GitHub release of wallet-for-epic:
    `https://github.com/BTLabsUK/wallet-for-epic/releases/latest/download/update-v2.json`
 
-`btlabs.json` is read from
-`https://raw.githubusercontent.com/BTLabsUK/btlabs-epic.github.io/main/btlabs.json`. The address
+`btlabs.json` is published, the same bytes, at
+`https://epiccash.btlabs.uk/api/v1/btlabs.json` (BT Labs' server, read first) and
+`https://raw.githubusercontent.com/BTLabsUK/btlabs-epic.github.io/main/btlabs.json`
+(btlabs-public `tool/publish.sh` writes both). The GitLab copy of this repository is frozen. The address
 `btlabs-epic.github.io` is no longer used (GitHub Pages is gone; the name is kept for this
 repository).
 
